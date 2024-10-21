@@ -1,0 +1,128 @@
+
+
+/*belajar css (pengabdian resilience) */
+
+*{                                                  /*untuk mengatur keseluruhan */
+  /*margin:0px;  */                                   /*untuk mengatur keseluruhan jarak*/
+}
+
+body{
+    background-color:#ffd966;                       /*ngatur warna background*/
+	background-image:url("resilience.png.png");     /*buat naro gambar background*/
+	background-repeat:no-repeat;                    /*ngatur gambar background berapa banyak*/
+	background-attachment:fixed;                    /*ngatur gambar  background letaknya */
+	background-position: center;                    /*ngatur posisi background*/
+	font-size:20px;
+}
+
+#menu_wrap{                                          /*tanda pagar di awal khusus untuk yang bersangkutan berupa id*/                               
+  /* margin-bottom:50px;                             /*untuk memberikan jarak bawah berbagian div di html*/ 
+	/*margin-left:50px;                             /*untuk memberikan jarak berbagian div di html*/*/
+	
+	margin:top right bottom left;
+	margin: 10px 30px 50px  50px ;
+}
+
+h1{
+	color:white;                                    /*ngartur warna text*/
+	text-align: center;                             /*ngatur posisi text*/
+	text-decoration:underline;                      /*ngatur garis text*/
+	display:inline;
+}
+
+h2{
+	text-align: center;                         
+	text-transform:uppercase;    
+	display:inline;
+	
+}
+
+#text_pendek{
+    font-size:20px;                                  /*ngatur font */
+	font-family:cursive;                             /* jenis font */
+	font-weight:bold;                                /* nagtur tebel font */
+	width:50%;                                       /*ngatur batas lebar font*/	
+	height:100px;                                    /*nagtur batas tinggi font */
+	background:white;
+	max-height:70px;                                 /*mengatur batas maksimal ketentuan*/
+	maax-weight:30%;
+	display:none;                                    /*untuk menghilangkan suatu element tersebut tanpa menghapus di html */
+	/*visibility:hiden; */                               /*hanya untuk menghilangkan element*/
+}
+
+#text_pembuka{ 
+	text-align:justify;                             /*ngatur paragraf */
+	text-indent:30px;
+	letter-spacing: 2px;                            /*nagtur jarak huruf*/
+	word-spacing:1px;                               /* ngatur jarak perkata*/
+	line-height:15px;                               /* ngatur jarak perbaris */
+}
+
+.menu{                                               /*tanda titik di awal khusus untuk class */
+	display:inline-block;                           /*untuk gabungan antara inline dan block*/
+	height:50px;
+	weight:50px;
+	text-decoration:none;                           /*menghilangkan garis bawah pada link */
+	
+	border-width:2px;                               /*untuk memberikan garis luar pada display*/
+	border-style:solid;
+	border-color:white;
+}
+
+.menu:link{                                         /*kondisi biasa*/
+    background:white;
+	color:blue;
+}	
+
+.menu:visited{                                      /*ketika setelah di kunjugi*/
+	background:orange;
+	color:yellow;
+}
+
+.menu:hover{                                         /*ketika mouse berada diatasnya*/
+    background:gray;
+	
+}
+
+.menu:active{                                        /*kondisi ketika diklik*/
+    background:blue;
+	
+}
+
+
+/*css (kontak pengabdian)*/
+
+/*mengatur di css terbagi  menjadi 3 :1.stastic,2. relative,3.absolute,4.fixed*/
+
+#menu_kontak{
+   /*position:relative;                              /*mengatur posisi menggunakan atribut tanpa menganggu yang lain*/
+	position:absolute;                              /*mengatur posisi menggunakan atribut yang bisa merubah posisi yang lain,karena elemnet yang menggunakan tidak di anggap*/
+	top:70px;
+	left:20px;
+}
+
+/*parent ini berfungsi dan sekaligus jadi pemegang pengatur utama dalam bagian yang bersangkutan */
+#parent_h1{
+	position:relative;
+	top:100px;
+}
+
+/*pada h1 ini bisa tergantung pada aturan parent yang tersedia  */
+#h1_member{
+	background:blue;
+	position:absolute;                               
+	top:120px;
+	left:20px;
+}
+
+#parent_h2{
+	position:relative;                            /*posisis relative juga tergantung pada browser walaupun itu parent elements . contoh="jika ada yang menggukan position fixed maka tidak bisa di ganggu gugat" */
+	top:100px;
+}
+
+#h2_member{
+	background:yellow;
+	position:fixed;                               /*mengatur posisi menggunakan atribut yang dimana akan menetap walaupun di scroll*/
+	top:50px;
+	left:20px;
+}
